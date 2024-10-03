@@ -193,6 +193,7 @@ ul li a{
 }
 .content .cn a{
   text-decoration: none;
+  font-size: 1rem;
 }
 .content .data h1{
     position: relative;

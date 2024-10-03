@@ -38,7 +38,6 @@ body {
 }
 .transition-text {
   font-size: 3rem;
-  color: #333;
   position: relative;
   transition: transform 0.5s ease, text-shadow 0.5s ease;
   white-space: nowrap; /* Prevent text from wrapping */
@@ -80,12 +79,12 @@ body {
   .btn{
     width: 100px;
     height: 40px;
-    background: blueviolet;
+    position: relative;
+    background: orange;
     border: 2px solid white;
     margin-top: 13px;
     color: #fff;
     font-size: 15px;
-    border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: 0.2s ease;
     cursor: pointer;
@@ -98,8 +97,12 @@ body {
   }
   @media (max-width:800px) {
     .srch,.btn{
+      
         visibility: hidden;
         width: 0;
+    }
+    .data h1{
+      font-size: 2rem;
     }
 
     
@@ -130,23 +133,66 @@ ul li a{
 
 .content .par {
  color: white;
+ font-size: 1rem;
    
 }
+.content{
+  display: flex;
+  justify-content: space-between;
+
+}
+.content .slider{
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+ 
 .data h1{
-    color: white;
+  color: orange;
 }
 .data span{
     color: orange;
 }
 .content .data{
     width: 50%;
+    height: 400px;
     display: flex;
-    justify-content: center;
+  
     position: relative;
     left: 7%;
-    top: 15%;
+    top: 10%;
+ 
     flex-direction: column;
   
+}
+.content .data .about{
+  width: 100%;
+  height: 300px;
+ 
+ 
+
+}
+.content .cn{
+  width: 160px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+  
+}
+.content .cn a{
+  text-decoration: none;
 }
 .content .data h1{
     position: relative;
@@ -159,12 +205,36 @@ ul li a{
     margin-top: 5px;
     margin-left: 20px;
 }
-
-
-.details {
+.icons a{
+  text-decoration: none;
+  color: #fff;
+}
+.icons ion-icon{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+  color: #ff7200;
+}
  
+ 
+
+.card-list .card-item .card-link{
+  width: 500px;
+  display: block;
+  margin-left: 150px;
+  padding: 10px;
+ 
+  border-radius: 12px;
 }
 
-.contact {
+.card-list .card-link .card-image{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
  
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
     <div class="main">
@@ -34,20 +35,52 @@
         <div class="data">
           <h1 class="transition-text">Web Design & <br /><span>Development</span> <br />Course</h1>
           <p class="par">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque
-            expedita atque eveniet <br />
-            quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus
-            <br />
-            a quae totam ipsa illum minus laudantium?
-            <br />
+            UI (User Interface) Design and UX (User Experience) Design are
+             two closely related disciplines that focus on creating an intuitive,
+              visually appealing, and efficient user experience. Together, they ensure
+               that digital products like websites and mobile apps are both easy to use
+                and engaging.
           </p>
+        
           <button class="cn"><a href="#">JOIN US</a></button>
+          <div class="about">
+            
+            <div class="icons">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+          </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="container swiper">
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="photo.jpg" alt="Card Image" class="card-image">
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="photo1.jpg" alt="Card Image" class="card-image">
+                  </a>
+                </li>
+              
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="photo2.jpg" alt="Card Image" class="card-image">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section details"></div>
-    <div class="section contact"></div>
-
+   
     <script>
       let currentTextIndex = 0;
       const texts = ["Hello student", "Welcome to UI & UX Desinging", "Enjoj the site"];
@@ -72,5 +105,8 @@
       setInterval(changeText, 3000);
       
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>

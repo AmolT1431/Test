@@ -1,36 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: lightgray;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
 }
- 
-.swiper-container {
-    width: 50%;
-    max-width: 600px; /* Set max width */
-    margin: auto;
-  }
-  img{
-    width: 200px;
-    height: 200px;
-  }
-  
-  .swiper-slide {
-    font-size: 24px;
-    background-color: #ddd; /* Slide background color */
-    height: 100px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .set{
-    width: 400px;
-    height: 200px;
-  }
+
+.content {
+  padding: 20px;
+}
+
+.spacer {
+  height: 1500px; /* To allow enough space to scroll */
+}
+
+.text-to-move {
+  position: relative;
+  font-size: 24px;
+  color: #333;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2 {
+  transition: transform 0.2s ease-out;
+}

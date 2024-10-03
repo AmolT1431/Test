@@ -32,7 +32,7 @@
       </div>
       <div class="section content">
         <div class="data">
-          <h1>Web Design & <br /><span>Development</span> <br />Course</h1>
+          <h1 class="transition-text">Web Design & <br /><span>Development</span> <br />Course</h1>
           <p class="par">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque
             expedita atque eveniet <br />
@@ -47,5 +47,30 @@
     </div>
     <div class="section details"></div>
     <div class="section contact"></div>
+
+    <script>
+      let currentTextIndex = 0;
+      const texts = ["Hello student", "Welcome to UI & UX Desinging", "Enjoj the site"];
+      const textElement = document.querySelector('.transition-text');
+      
+      function changeText() {
+          textElement.classList.add('transition-out');
+      
+          setTimeout(() => {
+              currentTextIndex = (currentTextIndex + 1) % texts.length;
+              textElement.textContent = texts[currentTextIndex];
+              textElement.classList.remove('transition-out');
+              textElement.classList.add('transition-in');
+          }, 500); // Match this timeout with the CSS transition duration
+      
+          setTimeout(() => {
+              textElement.classList.remove('transition-in');
+          }, 1000); // Reset after the transition
+      }
+      
+      // Change text automatically every 3 seconds
+      setInterval(changeText, 3000);
+      
+    </script>
   </body>
 </html>

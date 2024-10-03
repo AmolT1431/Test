@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="web_page.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">AtomicTos</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input
+            class="srch"
+            type="search"
+            name=""
+            placeholder="Type To text"
+          />
+          <a href="#"> <button class="btn">Search</button></a>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Web Design & <br><span>Development</span> <br>Course</h1>
+        <div class="card">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> <img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide">  <img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+            </div>
+          
+          </div>
+          
+      </div>
+      
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+ 
+          
+      var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',       // Enable 3D coverflow effect
+          grabCursor: true,          // Cursor changes when interacting
+          centeredSlides: true,      // Center the active slide
+          slidesPerView: 1,     // Display multiple slides around the center
+          coverflowEffect: {
+            rotate: 0,              // The angle of rotation for the 3D effect
+            stretch: 0,              // Stretch the space between slides
+            depth: 100,              // Depth perspective, larger values for more 3D
+            modifier: 5,             // Effect intensity
+            slideShadows: true,      // Enable shadows for the slides
+          },
+          loop: true,                // Loop the slides
+          autoplay: {
+            delay: 3000,             // Autoplay delay (3 seconds)
+            disableOnInteraction: false, // Continue autoplay after interaction
+          },
+          pagination: {              // Optional pagination bullets
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          speed: 1000,               // Transition speed (1 second)
+        });
+           
+  </script>
+  </body>
+</html>

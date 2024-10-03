@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="page2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+  <body>
+   
+      <div class="set">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> <img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide">  <img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="photo.jpg" alt="" srcset=""></div>
+            </div>
+          
+          </div>
+      </div>
+   
+    
+    <script>
+ 
+          
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',       // Enable 3D coverflow effect
+            grabCursor: true,          // Cursor changes when interacting
+            centeredSlides: true,      // Center the active slide
+            slidesPerView: 3,     // Display multiple slides around the center
+            coverflowEffect: {
+              rotate: 0,              // The angle of rotation for the 3D effect
+              stretch: 0,              // Stretch the space between slides
+              depth: 100,              // Depth perspective, larger values for more 3D
+              modifier: 1,             // Effect intensity
+              slideShadows: true,      // Enable shadows for the slides
+            },
+            loop: true,                // Loop the slides
+            autoplay: {
+              delay: 3000,             // Autoplay delay (3 seconds)
+              disableOnInteraction: false, // Continue autoplay after interaction
+            },
+            pagination: {              // Optional pagination bullets
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            speed: 1000,               // Transition speed (1 second)
+          });
+             
+    </script>
+  </body>
+</html>
